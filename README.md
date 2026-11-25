@@ -44,13 +44,13 @@ GridSearchCV was used to tune the Random Forest model. Five-fold cross-validatio
 | Training records | 792 |
 | Testing records | 198 |
 | Baseline accuracy | 75.25% |
-| Selected model | [Actual model name] |
-| Cross-validation ROC-AUC | [Actual CV AUC] |
-| Test ROC-AUC | [Actual test AUC] |
-| Final threshold | [Actual threshold] |
-| Final precision | [Actual precision] |
-| Final recall | [Actual recall] |
-| Appointments flagged | [Actual flagged count] |
+| Selected model | Logistic Regression |
+| Cross-validation ROC-AUC | 0.77 |
+| Test ROC-AUC | 0.79 |
+| Final threshold | 0.35 |
+| Final precision | 0.57 |
+| Final recall | 0.57 |
+| Appointments flagged | 49 |
 
 The final model was selected because it achieved the highest cross-validated ROC-AUC. The classification threshold was selected using the F1 score calculated from out-of-fold training predictions.
 
@@ -67,7 +67,7 @@ The Gemini API was used to classify patient follow-up notes into six categories:
 
 A CRAFT prompt and JSON schema were used to generate structured responses. Pydantic was used to validate the responses. Blank notes were skipped, while invalid responses were retained for review.
 
-Total Gemini generation calls: [Actual API call count]
+Total Gemini generation calls: 17
 
 ## Business Recommendation
 
