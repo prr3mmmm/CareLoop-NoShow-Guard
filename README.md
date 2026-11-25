@@ -26,8 +26,8 @@ Identify appointments that are most likely to be missed, understand the reasons 
 
 1. **Part 1 – Data Cleaning:** The cleaned dataset contains 990 appointments, including 218 no-shows, resulting in an overall no-show rate of 22.02%.
 2. **Part 2 – SQL Analysis:** Gomti Nagar Care Point has the highest no-show rate of 33.3%. Appointments booked more than 30 days in advance have a no-show rate of 60.5%.
-3. **Part 3 – Machine Learning:** The selected model achieved a test ROC-AUC of [actual AUC] and flagged [actual flagged count] out of 198 test appointments.
-4. **Part 4 – Generative AI:** Gemini analysed the first 10 patient follow-up notes, identifying structured reasons with [actual valid count] valid responses and one blank note skipped.
+3. **Part 3 – Machine Learning:** The selected model achieved a test ROC-AUC of 0.79 and flagged 49 out of 198 test appointments.
+4. **Part 4 – Generative AI:** Gemini analysed the first 10 patient follow-up notes, identifying structured reasons with 9 valid responses and one blank note skipped.
 
 ## Machine Learning Results
 
